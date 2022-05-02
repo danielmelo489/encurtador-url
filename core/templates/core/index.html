@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Encurtador</title>
+</head>
+<body>
+<form action="/create" method="post">
+    {% csrf_token %}
+    <label for="link">Insira seu link aqui:</label>
+    <input type="text" name="link" id="link" />
+
+    <button type="submit"> Encurtar </button>
+</form>
+</body>
+</html>
